@@ -1,0 +1,41 @@
+{
+  "name": "qrcode",
+  "main": "./lib/main",
+  "version": "0.0.0",
+  "description": "Generate QR code",
+  "keywords": [],
+  "repository": "https://github.com/NeuxLab/qrcode",
+  "license": "MIT",
+  "engines": {
+    "cc": ">=1.0.0 <2.0.0"
+  },
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "vueify": "^9.4.1"
+  },
+  "actionProviders": [
+    {
+      "name": "Generate QR code",
+      "description": "Generate QR code",
+      "input": "text|url",
+      "output": "image",
+      "methodName": "generate"
+    },
+    {
+      "name": "Decode QR code",
+      "description": "Decode QR code",
+      "input": "image",
+      "output": "text",
+      "methodName": "decode"
+    }
+  ],
+  "standard": {
+    "globals": [
+      "cc"
+    ]
+  },
+  "dependencies": {
+    "jsqr": "^1.0.4",
+    "qrcode": "^1.2.0"
+  }
+}
