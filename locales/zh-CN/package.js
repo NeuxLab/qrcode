@@ -7,7 +7,7 @@ module.exports = {
     },
     {
       name: "识别二维码",
-      description: "识别生成二维码"
+      description: "识别二维码"
     },
   ]
 }
